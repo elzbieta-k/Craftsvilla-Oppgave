@@ -65,7 +65,7 @@ nav a {
   background-image: url("./images/elena-mozhvilo-CfpCqN9qkrI-unsplash.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 555px;
   display: flex;
   gap: 10px;
@@ -160,4 +160,51 @@ button:hover {
   font-family: var(--text-icons-tilbakemeldinger-font);
   font-size: var(--font-size-nav-buttons-text);
   text-align: center;
+}
+
+/* WORKSHOPS SECTION */
+.intro {
+  background-image: url("./images/amauri-mejia-IhXrWDckZOQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.intro h1,
+.intro p {
+  background: transparent;
+  color: var(--offwhite-color);
+  font-family: var(--heading-font);
+}
+
+.intro h1 {
+  font-size: var(--font-size-h1);
+}
+
+.intro p {
+  font-size: 22px;
+}
+
+.workshop-title h1 {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-h1);
+  text-align: center;
+  color: var(--brown-primary-color);
+  padding: 69px 0;
+}
+.workshop-tilbud {
+  display: flex;
+  flex-direction: row;
+}
+
+.tilbud img {
+  height: 473px;
+  width: 400px;
+  object-fit: cover;
 }
