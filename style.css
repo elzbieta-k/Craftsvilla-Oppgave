@@ -2,4 +2,109 @@
   --logo-nav-font: "Fredericka the Great", serif;
   --heading-font: "Galindo", sans-serif;
   --text-icons-tilbakemeldinger: "Gantari", sans-serif;
+  --brown-primary-color: #403838;
+  --secondary-color: #fbf2ec;
+  --offwhite-color: #faf9f6;
+  --font-size-logo: 64px;
+  --font-size-nav-buttons-text: 24px;
+  --font-size-h1: 48px;
+  ---font-size-description: 16px;
+  --font-size-tilbakemeldinger: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--offwhite-color);
+}
+
+/* HEADER */
+
+header {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--logo-nav-font);
+}
+header a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header h1 {
+  font-size: var(--font-size-logo);
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  width: 40%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: var(--font-size-nav-buttons-text);
+  color: black;
+}
+
+/* HERO */
+
+.hero {
+  background-image: url("./images/elena-mozhvilo-CfpCqN9qkrI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 555px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero .hero-title {
+  width: 685px;
+  height: 242px;
+  background: transparent;
+  position: relative;
+  top: 30%;
+  left: 50%;
+}
+.hero-title h2,
+.hero-title h1 {
+  color: var(--offwhite-color);
+  font-family: var(--heading-font);
+  background: transparent;
+}
+
+.hero-title h1 {
+  font-size: var(--font-size-h1);
+}
+
+.hero-title h2 {
+  font-size: var(--font-size-nav-buttons-text);
+}
+.hero button {
+  height: 57px;
+  width: 385px;
+  color: var(--offwhite-color);
+  border: 4px solid var(--offwhite-color);
+  border-radius: 45px;
+  background: transparent;
+  font-family: var(--heading-font);
+  font-size: var(--font-size-nav-buttons-text);
+}
+
+button:hover {
+  background-color: var(--offwhite-color);
+  font-size: 28px;
+  color: rgba(64, 56, 56, 0.3);
 }
