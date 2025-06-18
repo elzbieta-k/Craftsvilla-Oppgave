@@ -291,7 +291,8 @@ p {
   flex-direction: column;
   gap: 20px;
   border: 2px solid var(--brown-primary-color);
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: 10px 100px / 120px;
   width: 418px;
   overflow: hidden;
   padding: 15px;
@@ -409,4 +410,42 @@ i:hover {
   background-color: var(--brown-primary-color);
   color: var(--offwhite-color);
   border-radius: 45px;
+}
+
+/* bestilling.html */
+
+.bestilling-side .workshop-tilbud {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0 70px;
+}
+
+.bestilling-side .tilbud {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bestilling-side .tilbud-description {
+  padding: 20px 50px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  position: static;
+  height: 473px;
+  width: 100%;
+}
+
+.bestilling-side .tilbud img {
+  height: 473px;
+  width: 682px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.bestilling-form h1 {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-h1);
+  color: var(--brown-primary-color);
+  text-align: center;
 }
