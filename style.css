@@ -26,22 +26,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--logo-nav-font);
 }
 header a {
   text-decoration: none;
   list-style-type: none;
 }
 
-header h1 {
+.logo h1 {
   font-size: var(--font-size-logo);
   color: black;
   font-weight: 400;
   font-style: normal;
   padding-left: 20px;
+  font-family: var(--logo-nav-font);
 }
+
 nav {
   width: 40%;
+  font-family: var(--logo-nav-font);
 }
 
 nav ul {
@@ -271,6 +273,7 @@ p {
   font-family: var(--heading-font);
   color: var(--brown-primary-color);
   text-align: center;
+  font-size: var(--font-size-h1);
 }
 
 .tilbakemeldinger-div {
@@ -331,4 +334,76 @@ p {
 
 .gi-oss-tilbakemelding .bestill-button {
   width: 403px;
+}
+
+/* FOOTER SECTION */
+.footer-logo-nav a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+  padding: 20px 0;
+}
+
+.footer-logo-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  width: 40%;
+}
+
+.footer-logo-nav .logo h1 {
+  font-size: 50px;
+}
+.logo h2 {
+  font-size: 26px;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--logo-nav-font);
+  text-align: center;
+}
+
+.socials {
+  padding: 0 20px;
+}
+.socials p {
+  font-family: var(--text-icons-tilbakemeldinger-font);
+  background-color: var(--offwhite-color);
+  font-size: 20px;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+i {
+  color: var(--brown-primary-color);
+  font-size: 40px;
+  padding: 10px;
+}
+
+i:hover {
+  background-color: var(--brown-primary-color);
+  color: var(--offwhite-color);
+  border-radius: 45px;
 }
