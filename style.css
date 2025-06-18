@@ -262,9 +262,8 @@ p {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-  gap: 30px;
+  gap: 50px;
+  padding: 50px;
 }
 
 .tilbakemeldinger-section h1 {
@@ -279,7 +278,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 10px;
 }
 
 .tilbakemelding-text {
@@ -290,12 +288,22 @@ p {
   border: 2px solid var(--brown-primary-color);
   border-radius: 10px;
   width: 418px;
+  overflow: hidden;
+  padding: 15px;
 }
+
+.tilbakemelding-text p,
+.kunde-info p {
+  text-align: left;
+  font-family: var(--text-icons-tilbakemeldinger-font);
+}
+
 .kunde-info {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
 }
 
 .kunde-info img {
@@ -304,4 +312,23 @@ p {
   border-radius: 45px;
   background-position: center;
   object-fit: cover;
+}
+
+.gi-oss-tilbakemelding {
+  background-color: var(---font-size-description);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gi-oss-tilbakemelding h2 {
+  background-color: var(---font-size-description);
+  font-family: var(--heading-font);
+  font-size: 40px;
+  color: var(--brown-primary-color);
+}
+
+.gi-oss-tilbakemelding .bestill-button {
+  width: 403px;
 }
