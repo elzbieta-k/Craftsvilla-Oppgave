@@ -122,11 +122,11 @@
         <h1>Bestill din neste workshop her</h1>
         <form action="">
           <div class="form-row">
-            <label for="name">Skriv ditt fullt navn</label>
+            <!-- <label for="name">Skriv ditt fullt navn</label> -->
             <input type="text" name="name" placeholder="Navn" required />
-          </div>
-          <div class="form-row">
-            <label for="tel">Skriv ditt telefonnummer</label>
+            <!-- </div>
+          <div class="form-row"> -->
+            <!-- <label for="tel">Skriv ditt telefonnummer</label> -->
             <input
               type="tel"
               name="telefonnummer"
@@ -135,24 +135,29 @@
             />
           </div>
           <div class="form-row">
-            <label for="email">Skriv din epostadresse</label>
+            <!-- <label for="email">Skriv din epostadresse</label> -->
             <input type="email" name="email" placeholder="Email" required />
           </div>
           <div class="form-row">
-            <label for="workshop">Hvilken workshop bestiller du?</label>
+            <!-- <label for="workshop">Hvilken workshop bestiller du?</label> -->
             <select name="workshop" id="workshop" required>
               <option value="" disabled selected>Velg workshop</option>
               <option value="Mosaikkkunst">Mosaikkkunst</option>
               <option value="Akvarellmaling">Akvarellmaling</option>
               <option value="Lerretsmaling">Lerretsmaling</option>
             </select>
+            <input
+              type="text"
+              name="antalldeltakere"
+              placeholder="Antall deltakere"
+            />
           </div>
           <div class="form-row">
-            <label for="dato">Velg den datoen som passer best</label>
-            <input type="date" name="dato" />
-          </div>
-          <div class="form-row">
-            <label for="tid">Velg den tiden som passer best</label>
+            <!-- <label for="dato">Velg dato</label> -->
+            <input type="date" name="dato" placeholder="Velg dato" />
+            <!-- </div>
+          <div class="form-row"> -->
+            <!-- <label for="tid">Velg den tiden som passer best</label> -->
             <select id="tid" name="tid" required>
               <option value="" disabled selected>-- Velg klokkeslett --</option>
               <option value="10:00">10:00</option>
@@ -160,14 +165,13 @@
               <option value="14:00">14:00</option>
               <option value="16:00">16:00</option>
             </select>
+            <!-- </div>
+          <div class="form-row"> -->
+            <!-- <label for="antalldeltakere">Antall deltakere</label> -->
           </div>
           <div class="form-row">
-            <label for="antalldeltakere">Antall deltakere</label>
-            <input type="number" name="antalldeltakere" min="1" value="1" />
-          </div>
-          <div class="form-row">
-            <label for="ønsker">Har du spesielle ønsker</label>
-            <input type="textarea" name="ønsker" placeholder="Skriv de her" />
+            <!-- <label for="ønsker">Har du spesielle ønsker</label> -->
+            <input type="text" name="ønsker" placeholder="Spesielle ønsker?" />
           </div>
           <button type="submit" class="bestill-button">Bestill nå</button>
         </form>
