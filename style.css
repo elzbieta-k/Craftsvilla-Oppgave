@@ -201,10 +201,107 @@ button:hover {
 .workshop-tilbud {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
+.tilbud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .tilbud img {
   height: 473px;
   width: 400px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.tilbud-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 305px;
+  width: 340px;
+  gap: 10px;
+  padding: 10px 30px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  position: relative;
+  bottom: 150px;
+}
+.tilbud-description h2,
+p {
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.tilbud-description h2 {
+  font-size: var(--font-size-nav-buttons-text);
+}
+
+.bestill-button {
+  width: 278px;
+  height: 57px;
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  border-radius: 90px;
+  font-size: var(--font-size-nav-buttons-text);
+  border: 3px solid;
+}
+
+.bestill-button:hover {
+  background-color: var(--brown-primary-color);
+  color: var(--offwhite-color);
+}
+
+/* TILBAKEMELDING SECTION */
+.tilbakemeldinger-section {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 30px;
+}
+
+.tilbakemeldinger-section h1 {
+  background-color: var(--secondary-color);
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  text-align: center;
+}
+
+.tilbakemeldinger-div {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.tilbakemelding-text {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid var(--brown-primary-color);
+  border-radius: 10px;
+  width: 418px;
+}
+.kunde-info {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.kunde-info img {
+  height: 60px;
+  width: 60px;
+  border-radius: 45px;
+  background-position: center;
   object-fit: cover;
 }
