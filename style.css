@@ -95,8 +95,14 @@ nav a {
 .hero-title h2 {
   font-size: var(--font-size-nav-buttons-text);
 }
+.hero a {
+  text-decoration: none;
+  padding-top: 8px;
+  text-align: center;
+}
 
-.hero button {
+.bestill-button-hvit {
+  display: block;
   height: 57px;
   width: 385px;
   color: var(--offwhite-color);
@@ -107,7 +113,7 @@ nav a {
   font-size: var(--font-size-nav-buttons-text);
 }
 
-button:hover {
+.bestill-button-hvit:hover {
   background-color: var(--offwhite-color);
   font-size: 28px;
   color: rgba(64, 56, 56, 0.3);
@@ -252,12 +258,16 @@ p {
 .tilbud-description h2 {
   font-size: var(--font-size-nav-buttons-text);
 }
+.tilbud-description p {
+  font-size: var(---font-size-description);
+}
 
-.tilbud-description a {
+.tilbud-description a,
+.gi-oss-tilbakemelding a {
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 .bestill-button {
   width: 278px;
@@ -563,7 +573,7 @@ select {
 /* galleri.html */
 
 .galleri-desc {
-  padding: 50px 0;
+  padding: 50px;
 }
 .galleri-desc h1 {
   font-size: var(--font-size-h1);
@@ -583,7 +593,8 @@ select {
   align-items: space-around;
   justify-content: space-evenly;
   gap: 50px;
-  padding: 30px;
+  padding: 70px 30px;
+  background-color: var(--secondary-color);
 }
 
 .galleri img {
