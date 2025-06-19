@@ -284,84 +284,6 @@ p {
   color: var(--offwhite-color);
 }
 
-/* TILBAKEMELDING SECTION */
-.tilbakemeldinger-section {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  padding: 50px;
-}
-
-.tilbakemeldinger-section h1 {
-  background-color: var(--secondary-color);
-  font-family: var(--heading-font);
-  color: var(--brown-primary-color);
-  text-align: center;
-  font-size: var(--font-size-h1);
-}
-
-.tilbakemeldinger-div {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.tilbakemelding-text {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border: 2px solid var(--brown-primary-color);
-  border-radius: 10px;
-  /* border-radius: 10px 100px / 120px; */
-  width: 418px;
-  overflow: hidden;
-  padding: 15px;
-}
-
-.tilbakemelding-text p,
-.kunde-info p {
-  text-align: left;
-  font-family: var(--text-icons-tilbakemeldinger-font);
-}
-
-.kunde-info {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.kunde-info img {
-  height: 60px;
-  width: 60px;
-  border-radius: 45px;
-  background-position: center;
-  object-fit: cover;
-}
-
-.gi-oss-tilbakemelding {
-  background-color: var(---font-size-description);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-}
-
-.gi-oss-tilbakemelding h2 {
-  background-color: var(---font-size-description);
-  font-family: var(--heading-font);
-  font-size: 40px;
-  color: var(--brown-primary-color);
-}
-
-.gi-oss-tilbakemelding .bestill-button {
-  width: 403px;
-}
-
 /* FOOTER SECTION */
 .footer-logo-nav a {
   text-decoration: none;
@@ -525,6 +447,7 @@ select {
 }
 
 /* tilbakemeldinger.html */
+
 .tilbakemelding-hero-title {
   background-image: url("./images/yannis-papanastasopoulos-kKzbyDeb62M-unsplash.jpg");
   background-position: center;
@@ -552,6 +475,84 @@ select {
 
 .tilbakemelding-hero-title p {
   font-size: 24px;
+}
+
+/* TILBAKEMELDING SECTION */
+.tilbakemeldinger-section {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 50px;
+}
+
+.tilbakemeldinger-section h1 {
+  background-color: var(--secondary-color);
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  text-align: center;
+  font-size: var(--font-size-h1);
+}
+
+.tilbakemeldinger-div {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tilbakemelding-text {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid var(--brown-primary-color);
+  border-radius: 10px;
+  /* border-radius: 10px 100px / 120px; */
+  width: 418px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.tilbakemelding-text p,
+.kunde-info p {
+  text-align: left;
+  font-family: var(--text-icons-tilbakemeldinger-font);
+}
+
+.kunde-info {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.kunde-info img {
+  height: 60px;
+  width: 60px;
+  border-radius: 45px;
+  background-position: center;
+  object-fit: cover;
+}
+
+.gi-oss-tilbakemelding {
+  background-color: var(---font-size-description);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gi-oss-tilbakemelding h2 {
+  background-color: var(---font-size-description);
+  font-family: var(--heading-font);
+  font-size: 40px;
+  color: var(--brown-primary-color);
+}
+
+.gi-oss-tilbakemelding .bestill-button {
+  width: 403px;
 }
 
 .tilbakemelding-form h1 {
