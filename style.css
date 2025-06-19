@@ -464,9 +464,8 @@ i:hover {
   color: var(--brown-primary-color);
   text-align: center;
 }
-
-.bestilling-form .tilbud-description h2,
-p {
+.bestilling-form .justify-text h2,
+.bestilling-form .justify-text p {
   text-align: justify;
 }
 
@@ -553,4 +552,39 @@ select {
 
 .tilbakemeldinger-side .tilbakemeldinger-title p {
   text-align: center;
+}
+
+/* galleri.html */
+
+.galleri-desc {
+  padding: 50px 0;
+}
+.galleri-desc h1 {
+  font-size: var(--font-size-h1);
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  text-align: center;
+}
+
+.galleri-desc p {
+  background-color: var(--offwhite-color);
+}
+
+.galleri {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 30px;
+}
+
+.galleri img {
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(64, 56, 56, 0.5);
+  width: 27vw;
+  height: 50vh;
+  object-fit: cover;
 }
