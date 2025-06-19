@@ -50,7 +50,7 @@
         <div class="hero-title">
           <h2>Velkommen til Craftsvilla</h2>
           <h1>Slipp løs kreativiteten din. Koble til. Slapp av.</h1>
-          <button>Bestill verkstedet ditt</button>
+          <button id="goToBestilling">Bestill verkstedet ditt</button>
         </div>
       </section>
       <!-- ABOUT US SECTION -->
@@ -243,5 +243,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("goToBestilling")
+        .addEventListener("click", function () {
+          window.location.href = "bestilling.html";
+        });
+    </script>
   </body>
 </html>

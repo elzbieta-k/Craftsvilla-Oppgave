@@ -76,7 +76,11 @@
                 kutting og fuging, slik at du kan lage ditt eget unike
                 mosaikkprosjekt.
               </p>
-              <p>Pris 399 kr</p>
+              <p>
+                Sett inkluderer: Ramme, A4 størrelse treplate, små fargede
+                steiner, gummi.
+              </p>
+              <p>Pris 400 kr</p>
               <button class="bestill-button">Bestill nå</button>
             </div>
           </article>
@@ -94,7 +98,11 @@
                 teknikker som vått-i-vått, lag-på-lag og fargeblanding, og få
                 tips til å male alt fra landskap til abstrakte motiver.
               </p>
-              <p>Pris 399 kr</p>
+              <p>
+                Sett inkluderer: Ramme, akvarellpapir med designmal,
+                akvarellfarger, pensler.
+              </p>
+              <p>Pris 200 kr</p>
               <button class="bestill-button">Bestill nå</button>
             </div>
           </article>
@@ -112,7 +120,11 @@
                 du drømmer om et abstrakt mesterverk eller et detaljert motiv,
                 hjelper vi deg med å bringe din visjon til live på lerretet.
               </p>
-              <p>Pris 499 kr</p>
+              <p>
+                Sett inkluderer: Ramme, akrylpapir med designmal, akrylfarger,
+                pensler.
+              </p>
+              <p>Pris 300 kr</p>
               <button class="bestill-button">Bestill nå</button>
             </div>
           </article>
@@ -120,7 +132,7 @@
       </section>
       <section class="bestilling-form">
         <h1>Bestill din neste workshop her</h1>
-        <form action="">
+        <form action="" id="myForm">
           <div class="form-row">
             <!-- <label for="name">Skriv ditt fullt navn</label> -->
             <input type="text" name="name" placeholder="Navn" required />
@@ -202,5 +214,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // stops the form from actually submitting
+        alert("Takk for bestillingen! 🌟");
+      });
+    </script>
   </body>
 </html>

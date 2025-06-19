@@ -68,7 +68,7 @@ nav a {
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
-  height: 555px;
+  height: 80vh;
   display: flex;
   gap: 10px;
 }
@@ -95,6 +95,7 @@ nav a {
 .hero-title h2 {
   font-size: var(--font-size-nav-buttons-text);
 }
+
 .hero button {
   height: 57px;
   width: 385px;
@@ -110,6 +111,7 @@ button:hover {
   background-color: var(--offwhite-color);
   font-size: 28px;
   color: rgba(64, 56, 56, 0.3);
+  cursor: pointer;
 }
 
 /* ABOUT US SECTION */
@@ -117,7 +119,7 @@ button:hover {
 .about-us {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 100px 70px;
 }
 
 .about-us img {
@@ -180,6 +182,10 @@ button:hover {
   padding: 0 150px;
 }
 
+.workshop-title {
+  padding: 30px 0;
+}
+
 .intro h1,
 .intro p {
   background: transparent;
@@ -225,10 +231,10 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 305px;
+  height: 345px;
   width: 340px;
-  gap: 10px;
-  padding: 10px 30px;
+  gap: 20px;
+  padding: 20px 30px;
   background-color: var(--secondary-color);
   border-radius: 13px;
   position: relative;
@@ -266,7 +272,7 @@ p {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
   padding: 50px;
 }
 
@@ -291,8 +297,8 @@ p {
   flex-direction: column;
   gap: 20px;
   border: 2px solid var(--brown-primary-color);
-  /* border-radius: 10px; */
-  border-radius: 10px 100px / 120px;
+  border-radius: 10px;
+  /* border-radius: 10px 100px / 120px; */
   width: 418px;
   overflow: hidden;
   padding: 15px;
@@ -357,7 +363,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .socials {
@@ -374,9 +380,10 @@ footer {
 
 .footer-logo-nav .logo h1 {
   font-size: 50px;
+  padding-left: 0;
 }
 .logo h2 {
-  font-size: 26px;
+  font-size: 22px;
   color: black;
   font-weight: 400;
   font-style: normal;
@@ -384,6 +391,9 @@ footer {
   text-align: center;
 }
 
+.footer-nav a {
+  font-size: 22px;
+}
 .socials {
   padding: 0 20px;
 }
@@ -417,8 +427,8 @@ i:hover {
 .bestilling-side .workshop-tilbud {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 0 70px;
+  gap: 80px;
+  padding: 0 100px;
 }
 
 .bestilling-side .tilbud {
@@ -446,6 +456,7 @@ i:hover {
 .bestilling-side .bestilling-form {
   padding: 50px 0;
 }
+
 .bestilling-form h1 {
   font-family: var(--heading-font);
   font-size: var(--font-size-h1);
@@ -453,7 +464,12 @@ i:hover {
   text-align: center;
 }
 
+.bestilling-form .tilbud-description h2,
+p {
+  text-align: justify;
+}
 form {
+  font-family: var(--text-icons-tilbakemeldinger-font);
   width: 40vw;
   display: flex;
   flex-direction: column;
