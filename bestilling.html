@@ -67,7 +67,7 @@
               src="./images/kelly-mccrimmon-qDot1fgsmfI-unsplash.jpg"
               alt="Bildet av mosaikk"
             />
-            <div class="tilbud-description">
+            <div class="tilbud-description justify-text">
               <h2>MOSAIKKKUNST</h2>
               <p>
                 Oppdag den fascinerende verdenen av mosaikk! Lær å sette sammen
@@ -81,7 +81,7 @@
                 steiner, gummi.
               </p>
               <p>Pris 400 kr</p>
-              <button class="bestill-button scrollToForm">Bestill nå</button>
+              <a href="#kontaktSkjema" class="bestill-button">Bestill nå</a>
             </div>
           </article>
           <article class="tilbud">
@@ -103,7 +103,7 @@
                 akvarellfarger, pensler.
               </p>
               <p>Pris 200 kr</p>
-              <button class="bestill-button scrollToForm">Bestill nå</button>
+              <a href="#kontaktSkjema" class="bestill-button">Bestill nå</a>
             </div>
           </article>
           <article class="tilbud">
@@ -125,7 +125,7 @@
                 pensler.
               </p>
               <p>Pris 300 kr</p>
-              <button class="bestill-button scrollToForm">Bestill nå</button>
+              <a href="#kontaktSkjema" class="bestill-button">Bestill nå</a>
             </div>
           </article>
         </div>
@@ -213,16 +213,6 @@
         alert(
           "Takk for at du bestilte hos CRAFTSVILLA! Vi kontakter deg snart for å bekrefte plassen din!"
         );
-      });
-      // Scrolle ned to form ved å klikke på Bestill knapp
-      const buttons = document.querySelectorAll(".scrollToForm");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          document
-            .getElementById("kontaktSkjema")
-            .scrollIntoView({ behavior: "smooth" });
-        });
       });
     </script>
   </body>

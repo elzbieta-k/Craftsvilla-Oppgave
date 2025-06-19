@@ -253,6 +253,12 @@ p {
   font-size: var(--font-size-nav-buttons-text);
 }
 
+.tilbud-description a {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 6px;
+}
 .bestill-button {
   width: 278px;
   height: 57px;
