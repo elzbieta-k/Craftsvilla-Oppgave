@@ -191,6 +191,7 @@ button:hover {
   background: transparent;
   color: var(--offwhite-color);
   font-family: var(--heading-font);
+  text-align: center;
 }
 
 .intro h1 {
@@ -468,6 +469,7 @@ i:hover {
 p {
   text-align: justify;
 }
+
 form {
   font-family: var(--text-icons-tilbakemeldinger-font);
   width: 40vw;
@@ -475,12 +477,14 @@ form {
   flex-direction: column;
   justify-content: center;
   margin: 50px auto;
+  gap: 10px;
 }
 
 input[type="text"],
 [type="email"],
 [type="tel"],
 [type="date"],
+[type="textarea"],
 select {
   background: none;
   border: none;
@@ -503,4 +507,50 @@ select {
 
 .bestilling-side .bestill-button {
   margin: 0 auto;
+}
+
+/* tilbakemeldinger.html */
+.tilbakemelding-hero-title {
+  background-image: url("./images/yannis-papanastasopoulos-kKzbyDeb62M-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.tilbakemelding-hero-title h1,
+.tilbakemelding-hero-title p {
+  background: transparent;
+  color: var(--offwhite-color);
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+.tilbakemelding-hero-title h1 {
+  font-size: var(--font-size-h1);
+}
+
+.tilbakemelding-hero-title p {
+  font-size: 24px;
+}
+
+.tilbakemelding-form h1 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  color: var(--brown-primary-color);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.tilbakemelding-form .bestill-button {
+  margin: 30px auto;
+}
+
+.tilbakemeldinger-side .tilbakemeldinger-title p {
+  text-align: center;
 }
