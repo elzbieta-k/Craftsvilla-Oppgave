@@ -236,12 +236,12 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33vw;
+  width: 32vw;
   height: 100vh;
 }
 .tilbud img {
   height: 100%;
-  width: 80%;
+  width: 90%;
   object-fit: cover;
   border-radius: 13px;
 }
@@ -251,8 +251,8 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50%;
-  width: 60%;
+  height: 60%;
+  width: 70%;
   gap: 20px;
   padding: 4% 5%;
   background-color: var(--secondary-color);
@@ -278,15 +278,15 @@ p {
 .tilbud-description a {
   text-decoration: none;
   text-align: center;
-  padding-top: 4px;
 }
 .bestill-button {
-  width: 90%;
+  width: 60%;
   font-family: var(--heading-font);
   color: var(--brown-primary-color);
   border-radius: 90px;
-  font-size: var(--font-size-nav-buttons-text);
+  font-size: var(--font-size-tilbakemeldinger);
   border: 3px solid;
+  padding: 5px;
 }
 
 .bestill-button:hover {
@@ -424,13 +424,19 @@ p {
   padding-top: 4px;
 }
 .tilbud-description-bs .bestill-button {
-  width: 90%;
+  width: 70%;
   font-family: var(--heading-font);
   color: var(--brown-primary-color);
   border-radius: 90px;
   font-size: var(--font-size-nav-buttons-text);
   border: 3px solid;
 }
+
+.tilbud-description-bs .bestill-button:hover {
+  background-color: var(--brown-primary-color);
+  color: var(--offwhite-color);
+}
+
 .bestilling-side .bestilling-form {
   padding: 50px 0;
 }
@@ -483,6 +489,7 @@ select {
 
 .bestilling-side .bestill-button {
   margin: 0 auto;
+  width: 60%;
 }
 
 /* tilbakemeldinger.html */
