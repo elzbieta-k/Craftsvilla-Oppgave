@@ -663,7 +663,7 @@ select {
   }
 
   .galleri img {
-    width: 38vw;
+    width: 70vw;
   }
 
   .tilbakemeldinger-div {
@@ -683,12 +683,17 @@ select {
   header {
     justify-content: center;
   }
-
+  form {
+    width: 70vw;
+  }
   .tilbud {
     width: 40vw;
   }
 
   .galleri img {
     width: 42vw;
+  }
+  .galleri {
+    gap: 6vh;
   }
 }
