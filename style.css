@@ -5,11 +5,11 @@
   --brown-primary-color: #403838;
   --secondary-color: #fbf2ec;
   --offwhite-color: #faf9f6;
-  --font-size-logo: 64px;
-  --font-size-nav-buttons-text: 24px;
-  --font-size-h1: 48px;
-  ---font-size-description: 16px;
-  --font-size-tilbakemeldinger: 18px;
+  --font-size-logo: 4rem;
+  --font-size-nav-buttons-text: 1.5rem;
+  --font-size-h1: 3rem;
+  ---font-size-description: 1rem;
+  --font-size-tilbakemeldinger: 1.3rem;
 }
 
 * {
@@ -19,13 +19,18 @@
   background-color: var(--offwhite-color);
 }
 
+html {
+  font-size: 16px;
+}
+
 /* HEADER */
 
 header {
-  height: 110px;
+  min-height: 20vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 header a {
   text-decoration: none;
@@ -42,17 +47,18 @@ header a {
 }
 
 nav {
-  width: 40%;
   font-family: var(--logo-nav-font);
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  height: 100%;
+  max-height: 100%;
+  gap: 25px;
+  padding: 0 20px;
 }
 
 nav a {
@@ -67,15 +73,15 @@ nav a {
   background-image: url("./images/elena-mozhvilo-CfpCqN9qkrI-unsplash.jpg");
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
   height: 80vh;
-  display: flex;
-  gap: 10px;
 }
 
 .hero .hero-title {
-  width: 685px;
-  height: 242px;
+  width: 45vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   background: transparent;
   position: relative;
   top: 120px;
@@ -103,8 +109,8 @@ nav a {
 
 .bestill-button-hvit {
   display: block;
-  height: 57px;
-  width: 385px;
+  height: 100%;
+  width: 60%;
   color: var(--offwhite-color);
   border: 4px solid var(--offwhite-color);
   border-radius: 45px;
@@ -115,7 +121,7 @@ nav a {
 
 .bestill-button-hvit:hover {
   background-color: var(--offwhite-color);
-  font-size: 28px;
+  font-size: 1.75rem;
   color: rgba(64, 56, 56, 0.3);
   cursor: pointer;
 }
@@ -125,12 +131,15 @@ nav a {
 .about-us {
   display: flex;
   justify-content: space-between;
-  padding: 100px 70px;
+  flex-wrap: wrap;
+  padding: 7% 5%;
+  height: 100vh;
 }
 
 .about-us img {
-  width: 548px;
-  height: 614px;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .desc-about-us {
@@ -151,16 +160,17 @@ nav a {
 .icons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .icon {
-  width: 163px;
-  height: 224px;
+  width: 20%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 49px;
+  gap: 5vh;
 }
 .icon img {
   height: 88px;
@@ -169,7 +179,7 @@ nav a {
 
 .icon p {
   font-family: var(--text-icons-tilbakemeldinger-font);
-  font-size: var(--font-size-nav-buttons-text);
+  font-size: var(--font-size-tilbakemeldinger);
   text-align: center;
   background-color: var(--offwhite-color);
 }
@@ -180,16 +190,16 @@ nav a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 357px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 150px;
+  padding: 0 10vw;
 }
 
 .workshop-title {
-  padding: 30px 0;
+  padding: 5vh 0;
 }
 
 .intro h1,
@@ -205,7 +215,7 @@ nav a {
 }
 
 .intro p {
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 .workshop-title h1 {
@@ -213,22 +223,25 @@ nav a {
   font-size: var(--font-size-h1);
   text-align: center;
   color: var(--brown-primary-color);
-  padding: 69px 0;
+  padding: 8vh 0;
 }
 .workshop-tilbud {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .tilbud {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 33vw;
+  height: 100vh;
 }
 .tilbud img {
-  height: 473px;
-  width: 400px;
+  height: 100%;
+  width: 80%;
   object-fit: cover;
   border-radius: 13px;
 }
@@ -237,15 +250,15 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 345px;
-  width: 340px;
+  justify-content: space-between;
+  height: 50%;
+  width: 60%;
   gap: 20px;
-  padding: 20px 30px;
+  padding: 4% 5%;
   background-color: var(--secondary-color);
   border-radius: 13px;
   position: relative;
-  bottom: 150px;
+  bottom: 15%;
 }
 .tilbud-description h2,
 p {
@@ -262,16 +275,13 @@ p {
   font-size: var(---font-size-description);
 }
 
-.tilbud-description a,
-.gi-oss-tilbakemelding a {
+.tilbud-description a {
   text-decoration: none;
   text-align: center;
-  vertical-align: middle;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 .bestill-button {
-  width: 278px;
-  height: 57px;
+  width: 90%;
   font-family: var(--heading-font);
   color: var(--brown-primary-color);
   border-radius: 90px;
@@ -294,7 +304,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 70px;
+  gap: 10vh;
   padding: 20px 0;
 }
 
@@ -302,27 +312,23 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 5vh;
 }
 
 .socials {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* justify-content: center; */
-}
-
-.footer-nav {
-  width: 40%;
 }
 
 .footer-logo-nav .logo h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   padding-left: 0;
 }
 .logo h2 {
-  font-size: 22px;
+  font-size: 1.2rem;
   color: black;
   font-weight: 400;
   font-style: normal;
@@ -331,7 +337,7 @@ footer {
 }
 
 .footer-nav a {
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 .socials {
   padding: 0 20px;
@@ -339,7 +345,7 @@ footer {
 .socials p {
   font-family: var(--text-icons-tilbakemeldinger-font);
   background-color: var(--offwhite-color);
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .footer-socials {
@@ -351,7 +357,7 @@ footer {
 
 i {
   color: var(--brown-primary-color);
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 10px;
 }
 
@@ -363,35 +369,68 @@ i:hover {
 
 /* bestilling.html */
 
-.bestilling-side .workshop-tilbud {
+.workshop-tilbud-bs {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 0 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10vh;
+  padding: 0 5vw;
 }
 
-.bestilling-side .tilbud {
+.tilbud-bs {
   display: flex;
   flex-direction: row;
-  align-items: center;
-}
-
-.bestilling-side .tilbud-description {
-  padding: 20px 50px;
-  background-color: var(--secondary-color);
-  border-radius: 13px;
-  position: static;
-  height: 473px;
   width: 100%;
+  height: 65vh;
 }
 
-.bestilling-side .tilbud img {
-  height: 473px;
-  width: 682px;
+.tilbud-bs img {
+  height: 100%;
+  width: 50%;
   object-fit: cover;
-  border-radius: 13px;
+  border-radius: 13px 0 0 13px;
 }
 
+.tilbud-description-bs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 4% 5%;
+  background-color: var(--secondary-color);
+  border-radius: 0 13px 13px 0;
+}
+
+.tilbud-description-bs h2,
+p {
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.tilbud-description-bs h2 {
+  font-size: var(--font-size-nav-buttons-text);
+}
+.tilbud-description-bs p {
+  font-size: var(---font-size-description);
+}
+
+.tilbud-description-bs a {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 4px;
+}
+.tilbud-description-bs .bestill-button {
+  width: 90%;
+  font-family: var(--heading-font);
+  color: var(--brown-primary-color);
+  border-radius: 90px;
+  font-size: var(--font-size-nav-buttons-text);
+  border: 3px solid;
+}
 .bestilling-side .bestilling-form {
   padding: 50px 0;
 }
@@ -453,12 +492,12 @@ select {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 357px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 150px;
+  padding: 0 10vw;
 }
 
 .tilbakemelding-hero-title h1,
@@ -482,8 +521,8 @@ select {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 50px;
+  gap: 9vh;
+  padding: 10vh;
 }
 
 .tilbakemeldinger-section h1 {
@@ -508,8 +547,7 @@ select {
   gap: 20px;
   border: 2px solid var(--brown-primary-color);
   border-radius: 10px;
-  /* border-radius: 10px 100px / 120px; */
-  width: 418px;
+  width: 30%;
   overflow: hidden;
   padding: 15px;
 }
@@ -524,6 +562,7 @@ select {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
@@ -536,28 +575,9 @@ select {
   object-fit: cover;
 }
 
-.gi-oss-tilbakemelding {
-  background-color: var(---font-size-description);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-}
-
-.gi-oss-tilbakemelding h2 {
-  background-color: var(---font-size-description);
-  font-family: var(--heading-font);
-  font-size: 40px;
-  color: var(--brown-primary-color);
-}
-
-.gi-oss-tilbakemelding .bestill-button {
-  width: 403px;
-}
-
 .tilbakemelding-form h1 {
   font-family: var(--heading-font);
-  font-size: 40px;
+  font-size: 2.5rem;
   color: var(--brown-primary-color);
   text-align: center;
   padding: 50px 0;
@@ -574,7 +594,7 @@ select {
 /* galleri.html */
 
 .galleri-desc {
-  padding: 50px;
+  padding: 12vh;
 }
 .galleri-desc h1 {
   font-size: var(--font-size-h1);
@@ -591,18 +611,77 @@ select {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: space-around;
   justify-content: space-evenly;
-  gap: 50px;
-  padding: 70px 30px;
+  gap: 12vh;
+  padding: 3%;
   background-color: var(--secondary-color);
 }
 
 .galleri img {
-  width: 150px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(64, 56, 56, 0.5);
   width: 27vw;
   height: 50vh;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .icon img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .tilbud {
+    width: 75vw;
+  }
+
+  form {
+    width: 70vw;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .galleri {
+    gap: 6vh;
+  }
+
+  .galleri img {
+    width: 38vw;
+  }
+
+  .tilbakemeldinger-div {
+    flex-direction: column;
+  }
+
+  .tilbakemelding-text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .tilbud {
+    width: 40vw;
+  }
+
+  .galleri img {
+    width: 42vw;
+  }
 }
