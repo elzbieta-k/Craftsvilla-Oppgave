@@ -84,7 +84,7 @@ nav a {
   gap: 15px;
   background: transparent;
   position: relative;
-  top: 120px;
+  top: 25%;
   left: 50%;
 }
 .hero-title h2,
@@ -640,7 +640,10 @@ select {
   header {
     justify-content: center;
   }
-
+  .hero .hero-title {
+    width: 60vw;
+    left: 30%;
+  }
   .icon img {
     height: 60px;
     width: 60px;
@@ -668,6 +671,7 @@ select {
 
   .tilbakemeldinger-div {
     flex-direction: column;
+    gap: 5vh;
   }
 
   .tilbakemelding-text {
@@ -683,6 +687,12 @@ select {
   header {
     justify-content: center;
   }
+
+  .hero .hero-title {
+    width: 70vh;
+    left: 40%;
+  }
+
   form {
     width: 70vw;
   }
