@@ -59,7 +59,7 @@
       <!-- Tilbakemelding Form -->
       <section class="tilbakemelding-form">
         <h1>Hvordan opplevde du workshoppen?</h1>
-        <form action="">
+        <form id="tilbakemeldingForm" action="">
           <div class="form-row">
             <input type="text" name="fornavn" placeholder="Fornavn" required />
             <input
@@ -85,6 +85,7 @@
               type="textarea"
               name="favorittdel"
               placeholder="Favorittdel av workshopen - hva likte du best?"
+              required
             />
           </div>
           <div class="form-row">
@@ -92,6 +93,7 @@
               type="textarea"
               name="forbedring"
               placeholder="Hvordan kan vi forbedre opplevelsen din?"
+              required
             />
           </div>
           <div class="form-row">
@@ -206,5 +208,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Pop Up melding for bestilling workshop
+      const tilbakemelding = document.getElementById("tilbakemeldingForm");
+
+      tilbakemelding.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert(
+          "Takk for din tilbakemeding! Vi setter stor pris på det! Ha en fortsatt fin dag ;)"
+        );
+      });
+    </script>
   </body>
 </html>
