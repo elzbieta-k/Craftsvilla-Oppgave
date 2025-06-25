@@ -707,3 +707,22 @@ select {
     gap: 6vh;
   }
 }
+
+/* Dialog  */
+
+dialog {
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog p {
+  padding: 25px;
+  background-color: transparent;
+}

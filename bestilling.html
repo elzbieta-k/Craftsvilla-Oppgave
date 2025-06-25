@@ -175,7 +175,29 @@
               placeholder="Spesielle ønsker?"
             />
           </div>
-          <button type="submit" class="bestill-button">Bestill nå</button>
+          <!-- <button type="submit" class="bestill-button">Bestill nå</button> -->
+          <button
+            type="button"
+            class="bestill-button"
+            onclick="document.getElementById('dialogen-min').showModal()"
+          >
+            Bestill nå
+          </button>
+          <dialog id="dialogen-min">
+            <div id="dialog-styling">
+              <p>
+                Takk for at du bestilte hos CRAFTSVILLA! Vi kontakter deg snart
+                for å bekrefte plassen din!
+              </p>
+              <button
+                type="button"
+                class="bestill-button"
+                onclick="document.getElementById('dialogen-min').close()"
+              >
+                Close me!
+              </button>
+            </div>
+          </dialog>
         </form>
       </section>
     </main>
@@ -204,7 +226,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       // Pop Up melding for bestilling workshop
       const form = document.getElementById("myForm");
 
@@ -214,6 +236,6 @@
           "Takk for at du bestilte hos CRAFTSVILLA! Vi kontakter deg snart for å bekrefte plassen din!"
         );
       });
-    </script>
+    </script> -->
   </body>
 </html>

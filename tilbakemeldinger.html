@@ -125,7 +125,29 @@
               accept="image/png, image/jpeg"
             />
           </div>
-          <button type="submit" class="bestill-button">Send</button>
+          <!-- <button type="submit" class="bestill-button">Send</button> -->
+          <button
+            type="button"
+            class="bestill-button"
+            onclick="document.getElementById('dialogen-min').showModal()"
+          >
+            Bestill nå
+          </button>
+          <dialog id="dialogen-min">
+            <div id="dialog-styling">
+              <p>
+                Takk for din tilbakemeding! Vi setter stor pris på det! Ha en
+                fortsatt fin dag!
+              </p>
+              <button
+                type="button"
+                class="bestill-button"
+                onclick="document.getElementById('dialogen-min').close()"
+              >
+                Close me!
+              </button>
+            </div>
+          </dialog>
         </form>
       </section>
       <!-- TILBAKEMELDING SECTION -->
