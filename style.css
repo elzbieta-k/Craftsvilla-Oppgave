@@ -614,24 +614,6 @@ select {
   background-color: var(--offwhite-color);
 }
 
-/* .galleri {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 12vh;
-  padding: 3%;
-  background-color: var(--secondary-color);
-}
-
-.galleri img {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(64, 56, 56, 0.5);
-  width: 27vw;
-  height: 50vh;
-  object-fit: cover;
-} */
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
