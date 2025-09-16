@@ -101,22 +101,20 @@ nav a {
 .hero-title h2 {
   font-size: var(--font-size-nav-buttons-text);
 }
-.hero a {
-  text-decoration: none;
-  padding-top: 8px;
-  text-align: center;
-}
 
 .bestill-button-hvit {
   display: block;
-  height: 100%;
-  width: 60%;
+  height: 100px;
+  line-height: 100px;
+  width: 400px;
+  text-align: center;
   color: var(--offwhite-color);
   border: 4px solid var(--offwhite-color);
   border-radius: 45px;
   background: transparent;
   font-family: var(--heading-font);
   font-size: var(--font-size-nav-buttons-text);
+  text-decoration: none;
 }
 
 .bestill-button-hvit:hover {
@@ -724,20 +722,48 @@ dialog p {
   background-color: transparent;
 }
 
+/* --------------------------------Media queries---------------------- */
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    width: 70vw;
+  }
+  .tilbud {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero .hero-title {
+    left: 0%;
+    top: 30%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hero-title h2,
+  h1 {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 12px;
   }
 
-  header {
-    justify-content: center;
-  }
-  .hero .hero-title {
-    width: 60vw;
-    left: 30%;
-  }
   .icon img {
-    height: 60px;
+    height: auto;
     width: 60px;
   }
 
@@ -761,26 +787,90 @@ dialog p {
   .tilbakemelding-text {
     width: 100%;
   }
+
+  .bestill-button-hvit {
+    height: 60px;
+    line-height: 60px;
+    width: 250px;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
-  html {
-    font-size: 14px;
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .logo h1 {
+    padding-left: 0;
   }
 
-  header {
-    justify-content: center;
+  .hero-title h1,
+  .about-us h2 {
+    text-align: center;
   }
 
-  .hero .hero-title {
-    width: 70vh;
-    left: 40%;
+  .about-us {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    gap: 20px;
   }
 
-  form {
-    width: 70vw;
+  .desc-about-us {
+    width: 100%;
+    gap: 10px;
   }
+
+  .desc-about-us p {
+    font-size: 1rem;
+  }
+
+  .about-us img {
+    width: 100%;
+  }
+
+  .hero-title h1,
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .bestill-button-hvit {
+    height: 19%;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .tilbud-bs {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .tilbud-bs img {
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+  }
+
+  .tilbud-description-bs {
+    border-radius: 0 0 13px;
+  }
+
+  .galleri-desc {
+    padding: 5vh;
+  }
+
+  .tilbud-description {
+    height: auto;
+  }
+
+  .tilbud img {
+    height: 50%;
+  }
+
   .tilbud {
-    width: 40vw;
+    height: auto;
   }
 }
