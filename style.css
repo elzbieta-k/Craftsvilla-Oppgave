@@ -791,7 +791,7 @@ dialog p {
   .bestill-button-hvit {
     height: 60px;
     line-height: 60px;
-    width: 250px;
+    width: 300px;
   }
 }
 
@@ -835,9 +835,6 @@ dialog p {
     font-size: 2rem;
   }
 
-  .bestill-button-hvit {
-    height: 19%;
-  }
   .intro p {
     font-size: 1rem;
   }
